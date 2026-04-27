@@ -1,7 +1,7 @@
 //1 import express
 const express = require('express')
 //4 import userController
-const userController = require('../Controllers/userController')
+const userController = require('../controllers/userController')
 
 const jwtMiddleware = require('../middlewares/jwtMiddleware')
 const adminJwtMiddleware = require('../middlewares/adminJwtMiddleware')
