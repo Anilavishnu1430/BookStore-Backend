@@ -190,8 +190,8 @@ exports.makePayment=async(req,res)=>{
         ];
         const session = await Stripe.checkout.sessions.create({
         payment_method_types: ["card"],
-        success_url: "http://localhost:5173/payment-success",
-        cancel_url: "http://localhost:5173/payment-error",
+        success_url: "https://book-store-frontend-seven-sand.vercel.app/payment-success",
+        cancel_url: "https://book-store-frontend-seven-sand.vercel.app/payment-error",
         line_items,
         mode: "payment",
         });
